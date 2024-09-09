@@ -1,0 +1,10 @@
+[package]
+name = "contract"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ckb-std = { version = "0.15.3" }
+#ckb-std = { version = "0.15.3"}
+molecule = { version = "0.7.5", default-features = false }
+blake2b-ref = "0.3.1"

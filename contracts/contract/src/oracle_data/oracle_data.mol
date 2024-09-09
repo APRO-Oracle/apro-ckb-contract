@@ -1,0 +1,16 @@
+import ../common;
+
+
+
+table PriceStruct {
+    udt_symbol: UTF8String,
+    price: Uint256,
+    decimal: Uint8,
+    timestamp: Uint64,
+    udt_type_hash:UTF8String,
+}
+
+vector PriceDataVec <PriceStruct>;
+table OracleData {
+    price_data: PriceDataVec,
+}

@@ -1,0 +1,6 @@
+/build
+/target
+/tests/failed_txs
+migrations
+ckb-cli部署脚本.md
+.idea
