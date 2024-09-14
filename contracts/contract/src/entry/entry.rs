@@ -23,7 +23,7 @@ pub fn run() -> Result<(), Error> {
     let mut output_cell_count: Vec<OracleData> = Vec::new();
     let mut index = 0;
     loop {
-        let data = load_cell_data(index, Source::Input);
+        let data = load_cell_data(index, Source::GroupInput);
         match data {
             Ok(data) => {
                 if data.starts_with(b"OracleCell") {
@@ -46,7 +46,7 @@ pub fn run() -> Result<(), Error> {
     }
     index = 0;
     loop {
-        let data = load_cell_data(index, Source::Output);
+        let data = load_cell_data(index, Source::GroupOutput);
         match data {
             Ok(data) => {
                 if data.starts_with(b"OracleCell") {
