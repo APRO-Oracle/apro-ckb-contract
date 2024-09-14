@@ -2,6 +2,7 @@
 #[derive(Debug)]
 // #[derive(Eq, PartialEq, Debug, Clone, Copy)]
 pub enum Error {
+    SkipCode0,
     IndexOutOfBound,
     LengthNotEnough,
     ItemMissing,
